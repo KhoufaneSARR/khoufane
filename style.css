@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Page d'acceuil*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div, section, ul, li, a, header{
+    box-sizing: border-box;
+    height: 70px;
+}
+
+#Accueil{
+background-image: url("senegal.jpg");
+height: 100vh;
+background-position: center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 0 auto;
+}
+
+#Accueil h1{
+    color:  #3C2C3E;
+    font-size: 50px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: fixed;
+    z-index: 999;
+    background-color: #3C2C3E;
+    
+    font-weight:bold;
+    transition: background-color 0.3s ease;
+}
+header a:hover{
+    background-color: #ebf0eb;
+    color: black;
+}
+
+  
+  
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+img{
+width: 70px;
+height: 70px;
+border-radius: 2px;}
+    
+
+/*Style css pour la page hebergement*/
+
+section{
+    width: 100%;
+    float: left;
+    height: 1200px;
+    position: relative;
+}
+
+
+#Guidevoyage{
+     background-color: #ED6663;
+}
+
+#Hebergement{
+     background-color: #ede0e6;
+    
+}
+#Hebergement h1{
+    text-align: left;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#Contact{
+     background-color:#ede4ee;
+     margin-bottom: 40px;
+    
+}
+#Contact{
+text-align: center;
+font-size: 30px;}
+
+.grid{
+max-width: 1200px;
+width: 80%;;
+height: auto;
+margin: 30px auto;
+border:1px  #470650;
+display: grid ;
+grid-template-columns: repeat(auto-fill,300px);
+justify-content: center;
+grid-gap:100px;
+grid-gap:  100px 50px ;
+
+}
+
+
+.grid-items:hover {width: 300px;
+    height: 200px;
+    background: #b4a7b5;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.grid-items {width: 300px;
+    height: 200px;
+    background: #b4a7b5;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.grid-items img{width: 300px;
+    height: 200px;
+    background: #b4a7b5;
+    border-radius: 5px;
+    box-shadow: #5f0d6a;
+}
+
+.grid-items img{width: 300px;
+    height: 200px;
+    background: #b4a7b5;
+    border-radius: 5px;
+   cursor: pointer;
+}
+
+  .button {
+    display:inline-block;
+    padding: 25px 20px;
+    background-color: #693112;
+    color: #f0e3e3;
+    font-size: 18px;
+    text-decoration:none;
+    border-radius: 20px; 
+    outline: none;
+    border: none;
+   font-weight: lighter;
+   cursor: pointer;
+   position: relative;
+   box-shadow: 0 6px rgb(115, 57, 2);
+} 
+.button:active{
+    box-shadow: 0 0 rgb(157, 155, 27);
+    top:6px}
+h2{
+    text-align: left;
+    color: #1752dc;
+}
+
+/*page guide de voyage*/
+
+#GuideVoyage{ 
+background-color: #f7e5f9;
+height: 700px;
+margin-top: auto;
+text-align: center;}
+.guide .Enteteguide{
+background-color: #3C2C3E; 
+color: #ebf0eb;
+height: 50px;
+text-align: center;
+}
+#GuideVoyage h1{
+    font-size: 30px;
+    border: #3C2C3E;
+}
+
+#Apropos{
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 0 auto;
+    height: 600px;
+    text-align: center;
+   box-shadow: #d2c5d3;
+   border: #3C2C3E;
+
+}
+#Apropos p {
+   font-size: 20px;
+    text-align: center;
+
+}
+
+
+#Apropos h1{font-size: 50px;
+}
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px gray;
+  }
+
+ 
+
+  figure:hover img {
+    transform: scale(1.1);
+  }
+
+
+  .image img {
+    width: 300px;
+    height: 300px;
+    display: block;
+   flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .image figcaption {
+    font-size: 20px;
+    font-weight: Arial;
+    text-align: center;
+  }
+
+/*Page de contact*/
+#Contact{
+background-image: url('https://lp-cms-production.imgix.net/2019-06/GettyImages-512970017_high.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4');
+background-position: center;
+background-size: cover;
+height: 550px;}
+
+
+.form {
+    width: 400px;
+    height: 400px;
+    background-color: #3C2C3E ;
+    border: 1px solid ;
+    border-radius: 2px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 110px;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 0 6px rgb(125, 113, 101);
+  }
+.form h3{font-size: 20px;}
+  input{
+    width: 250px;
+    height: 30px;
+    border: solid 2px  ;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  footer{
+    text-align: center;
+    color:#3C2C3E;
+    height: 50px;
+}
+.btn{
+background-color: #693112 ;
+color: #FFF;
+border: none;
+border-radius: 5px;
+margin: 10px 0;
+font-size: 14px;
+cursor: pointer;
+width: 250px;
+height: 30px;}
